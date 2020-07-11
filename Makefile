@@ -2,7 +2,7 @@ CC   = gcc
 SRC  = c
 HEAD = h
 OBJ  = o
-BIN  = program.exe
+BIN  = program
 
 $(BIN): *.$(OBJ)
 	$(CC) $^ -o $@ 
@@ -20,4 +20,4 @@ clasm:
 	rm -f *.s
 
 cl:
-	rm -f $(BIN) *.$(OBJ) *.s
+	rm -f $(BIN) *.$(OBJ) *.s *.gch
