@@ -5,7 +5,7 @@ OBJ  = o
 BIN  = program
 
 $(BIN): *.$(OBJ)
-	$(CC) $^ -o $@ 
+	$(CC) $^ -o $@
 
 %.$(OBJ): %.$(SRC) %.$(HEAD)
 	$(CC) $^ -c
@@ -15,7 +15,7 @@ asm: *.s
 
 %.s: %.$(SRC)
 	$(CC) $^ -S
-	
+
 clasm:
 	rm -f *.s
 
